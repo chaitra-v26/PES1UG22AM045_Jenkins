@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ -o output main.cpp' // Compiles your C++ file
+                sh 'g++ -o output nonexistent_file.cpp' 
                 echo 'Build Stage Successful'
             }
         }
